@@ -5,4 +5,6 @@ This is an exploration game created with C++ that is meant to be run directly fr
 ![Gameplay Demo](/images/demo.gif)
 
 
-Print mode requires the user to type in input (*For Example: 'W'*) and then press *Enter* to make a move. 
+Print mode requires the user to type in input (*For Example: 'W'*) and then press *Enter* to make a move. This is shown below:
+
+![Print-Mode Demo](/images/print-mode.gif)
