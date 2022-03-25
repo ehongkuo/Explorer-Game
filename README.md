@@ -1,11 +1,11 @@
 # Explorer-Game
 
 ## Table of Contents
-* [Setup](#Setup)
-* [Movement](#Movement)
-* [Rules/Gameplay](#Rules/Gameplay)
-* [Customizability](#Customizability)
-* [Further Notes/Assumtions/Clarifications](#Further-Notes/Assumptions/Clarifications)
+* [Setup](#setup)
+* [Movement](#movement)
+* [Rules/Gameplay](#rules/Gameplay)
+* [Customizability](#customizability)
+* [Further Notes/Assumptions/Clarifications](#further-Notes/Assumptions/Clarifications)
 
 This is an exploration game created with C++ that is meant to be run directly from the terminal. The user plays the game with user input provided with 'W', 'A', 'D' keys to move and can either run the game in **print** mode or **curses** mode.
 
