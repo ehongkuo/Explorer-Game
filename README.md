@@ -1,5 +1,12 @@
 # Explorer-Game
 
+## Table of Contents
+* [Setup](#Setup)
+* [Movement](#Movement)
+* [Rules/Gameplay](#Rules/Gameplay)
+* [Customizability](#Customizability)
+* [Further Notes/Assumtions/Clarifications](#Further-Notes/Assumptions/Clarifications)
+
 This is an exploration game created with C++ that is meant to be run directly from the terminal. The user plays the game with user input provided with 'W', 'A', 'D' keys to move and can either run the game in **print** mode or **curses** mode.
 
 ![Gameplay Demo](/images/demo.gif)
@@ -13,9 +20,7 @@ Curses mode makes this game much easier to play by eliminating a need to press *
 
 ![Curses-Mode Demo](/images/curses-mode.gif)
 
-## How to Play
-
-### Setup
+## Setup
 
 Thanks to our Makefile, upon loading this game to your computer, compile this game on your local device by simply typing 'make' into your terminal, and our game is ready to go! After this, we play the game by running the main.cpp file which is done in C++ with ./main. 
 
@@ -23,21 +28,21 @@ Running the following command: [ ./main ] will result in the game running in **p
 
 Running the following command: [ ./main 1 ] will result in the game running in **curses** mode
 
-### Movement
+## Movement
 
 Regardless of mode, the user moves forward and thus uses up a 'move' when pressing 'W'. The 'A' and 'D' keys are for directional rotation, rotating the player left and right 90 degrees respectively. These two keys do not use up 'moves'. 'Q' quits the game.
 
-### Rules/Gameplay
+## Rules/Gameplay
 
 The goal of the game is to find and collect all of the items before you run out of moves! The number of moves you have will be updated live and printed to your screen at all times. You must navigate your way through the map to search for items (that appear as dollar signs '$'). There can be multiple map segments on each level which can be accessed through portals (that appear as 'at' signs '@'). Traveling through these will 'teleport' your character to a portal on a different map segment. You are allowed to travel back through the portal you came out of. There will be building obstacles throughout the maps that you cannot move through so make sure to go around those!
 
-### Customizability
+## Customizability
 
 Game information is loaded in via the folder 'game_files' and though pre-made levels are included to provide an overall understanding of the game, the player is free to create their own levels by adding new files to the 'game_files' folder and loading them into the main.cpp file!
 
 Just make sure that game and level files follow the following syntax:
 
-#### Game Files
+### Game Files
 
 [Height of screen (px)] [Width of screen (px)]   
 [Number of levels]  
@@ -54,7 +59,7 @@ level1.txt
 level2.txt  
 boss_level.txt  
 
-#### Level Files  
+### Level Files  
 
 [Index of map segment player starts]  
 [Vertical position at which player starts] [Horizontal position]  
@@ -107,7 +112,7 @@ P 5 right 6 left
 P 4 down 6 up  
 N 1000  
 
-### Further Notes/Assumptions/Clarifications
+## Further Notes/Assumptions/Clarifications
 
 * If the player collects the item on their last move, this counts as completing the level
 * Game and Level data format is not validated and therefore must follow syntax
