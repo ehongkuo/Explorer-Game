@@ -3,9 +3,9 @@
 ## Table of Contents
 * [Setup](#setup)
 * [Movement](#movement)
-* [Rules/Gameplay](#rules/gameplay)
+* [Rules/Gameplay](#rules)
 * [Customizability](#customizability)
-* [Further Notes/Assumptions/Clarifications](#further-notes/assumptions/clarifications)
+* [Further Notes/Assumptions/Clarifications](#further-notes)
 
 This is an exploration game created with C++ that is meant to be run directly from the terminal. The user plays the game with user input provided with 'W', 'A', 'D' keys to move and can either run the game in **print** mode or **curses** mode.
 
@@ -34,7 +34,8 @@ Regardless of mode, the user moves forward and thus uses up a 'move' when pressi
 
 ## Rules/Gameplay
 
-The goal of the game is to find and collect all of the items before you run out of moves! The number of moves you have will be updated live and printed to your screen at all times. You must navigate your way through the map to search for items (that appear as dollar signs '$'). There can be multiple map segments on each level which can be accessed through portals (that appear as 'at' signs '@'). Traveling through these will 'teleport' your character to a portal on a different map segment. You are allowed to travel back through the portal you came out of. There will be building obstacles throughout the maps that you cannot move through so make sure to go around those!
+The goal of the game is to find and collect all of the items before you run out of moves! The number of moves you have will be updated live and printed to your screen at all times.  
+You must navigate your way through the map to search for items (that appear as dollar signs '$'). There can be multiple map segments on each level which can be accessed through portals (that appear as 'at' signs '@'). Traveling through these will 'teleport' your character to a portal on a different map segment. You are allowed to travel back through the portal you came out of. There will be building obstacles throughout the maps that you cannot move through so make sure to go around those!
 
 ## Customizability
 
