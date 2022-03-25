@@ -39,4 +39,29 @@ Just make sure that game and level files follow the following syntax:
 
 #### Game Files
 
+[Height of screen (px)] [Width of screen (px)]
+[Number of levels]
+[Relative path to file corresponding to level 1]
+[Relative path to file corresponding to level 2]
+...
+[Relative path to file corresponding to level n]
+
+**Example Game File**
+
+45 60
+3
+level1.txt
+level2.txt
+boss_level.txt
+
+#### Level Files
+
+[Index of map segment player starts]
+[Vertical position at which player starts] [Horizontal position]
+[Player starting direction]
+[Map Segment data with format: M 'height' 'width'] (index: 0)
+[M 'height' 'width'] (index: 1)
+...
+[M 'height' 'width'] (index: n - 1)
+
 
