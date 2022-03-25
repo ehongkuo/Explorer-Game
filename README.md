@@ -63,5 +63,46 @@ boss_level.txt
 [M 'height' 'width'] (index: 1)  
 ...  
 [M 'height' 'width'] (index: n - 1)  
+[Building data with format: B 'map segment index' 'y coordinate of top-left of the building' 'x coordinate']   
+[B 'index' 'y' 'x']  
+...  
+[B 'index' 'y' 'x']  
+[Item data with format: I 'map segment index' 'y coordinate' 'x coordinate']  
+[I 'index' 'y' 'x']  
+...  
+[I 'index' 'y' 'x']  
+[Portal data with format: P {source map segment index} {source wall} {destination map segment index} {destination wall}  
+[P {source index} {source wall} {destination index} {destination wall}]  
+...  
+[P {source index} {source wall} {destination index} {destination wall}]  
+[Number of moves with format: N {max number of moves}
 
+**Example Game File** 
 
+0
+1 1
+up
+M 30 50
+M 40 40
+M 40 70
+M 40 30
+M 40 40
+M 40 30
+M 40 50
+B 2 5 15
+B 3 10 7
+B 4 4 15
+B 4 25 15
+B 5 1 1
+B 5 1 20
+B 5 20 20
+B 5 20 20
+I 6 38 48
+P 0 right 1 left
+P 1 down 3 up
+P 2 right 3 left
+P 3 right 4 left
+P 5 up 3 down
+P 5 right 6 left
+P 4 down 6 up
+N 1000
