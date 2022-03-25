@@ -3,9 +3,9 @@
 ## Table of Contents
 * [Setup](#setup)
 * [Movement](#movement)
-* [Rules/Gameplay](#rules)
+* [Rules/Gameplay](#rules-gameplay)
 * [Customizability](#customizability)
-* [Further Notes/Assumptions/Clarifications](#further-notes)
+* [Further Notes/Assumptions/Clarifications](#further-notes-assumptions-clarifications)
 
 This is an exploration game created with C++ that is meant to be run directly from the terminal. The user plays the game with user input provided with 'W', 'A', 'D' keys to move and can either run the game in **print** mode or **curses** mode.
 
